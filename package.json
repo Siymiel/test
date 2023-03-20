@@ -1,0 +1,33 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "start:dev": "lerna run start:dev",
+    "ts:check": "lerna run ts:check",
+    "lint:check": "lerna run lint:check",
+    "lint:fix": "lerna run lint:fix",
+    "lint:fix:specific": "lerna run lint:fix:specific --",
+    "format:check": "lerna run format:check",
+    "format:fix": "lerna run format:fix",
+    "format:fix:specific": "lerna run format:fix --",
+    "test": "lerna run test",
+    "test:watch": "lerna run test:watch",
+    "test:cypress": "lerna run test:cypress",
+    "prepare": "husky install",
+    "hook:precommit": "lint-staged"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,html,css}": "npm run format:fix:specific --",
+    "*.{js,jsx,ts,tsx}": "npm run lint:fix:specific --"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lerna": "^6.4.1",
+    "lint-staged": "^13.1.1"
+  }
+}

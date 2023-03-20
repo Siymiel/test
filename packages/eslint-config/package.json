@@ -1,0 +1,35 @@
+{
+  "name": "@ais/eslint-config",
+  "version": "0.0.1",
+  "description": "eslint config for ais project",
+  "main": "index.js",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --list-different --write .",
+    "format:fix:specific": "prettier --list-different --write"
+  },
+  "author": "Justen Martin <justen.martin@experian.com>",
+  "license": "NONE",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  }
+}
